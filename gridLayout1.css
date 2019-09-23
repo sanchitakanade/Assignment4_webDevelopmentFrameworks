@@ -1,0 +1,45 @@
+/*  Name: Sanchita Kanade
+	Instructor Name: Zak Ruvalcaba
+	Class: CS648.01 Modern Web Development Frameworks Fall 2019
+	File: gridLayout1.css
+    Assignment No.: 4
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width:960px;
+    margin:20px auto 0 auto;
+}
+div, footer {
+    background: silver;
+}
+
+nav, section,main,footer {
+    display: grid;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #EDEDED;
+    grid-gap: 210px;
+    grid-template: 80px/250px 500px;
+}
+
+nav div:last-of-type {
+    width: 500px;
+    height: 40px;
+    align-self: center;    
+}
+
+section { height: 300px; }
+
+main {
+    background:#DEDEDE;
+    grid-template: 160px / repeat(2, 1fr);
+    grid-gap: 20px;
+}
+footer {
+    height:50px;
+    align-items: center;
+    justify-items: center;
+}
